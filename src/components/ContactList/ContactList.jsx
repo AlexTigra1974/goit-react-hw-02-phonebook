@@ -3,6 +3,7 @@ import { List, Item } from './ContactList.styled';
 import PropTypes from 'prop-types';
 
 export const ContactList = ({ contacts, onDelete, filter }) => {
+  console.log(contacts);
   if (filter.length) {
     contacts = contacts.filter(contact =>
       contact.name.toLowerCase().includes(filter.toLowerCase())
